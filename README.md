@@ -39,7 +39,8 @@ Add this line to the file:
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 If the above path does not work, try using this one instead:
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+   export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 Save and close the file.
 
@@ -52,16 +53,7 @@ To run the PHPUnit tests, navigate to the project directory and run the followin
 If you have installed PHPUnit locally in your project (i.e., it's listed as a dev dependency in your composer.json), you should use the following command instead:
 
 ## Copy code
-./vendor/bin/phpunit
-Contributing to PHPUnitExamples
-To contribute to PHPUnitExamples, follow these steps:
-
-Fork this repository.
-Create a branch: git checkout -b <branch_name>.
-Make your changes and commit them: git commit -m '<commit_message>'
-Push to the original branch: git push origin <project_name>/<location>
-Create the pull request.
-Alternatively, see the GitHub documentation on creating a pull request.
+./vendor/bin/phpunit /path/to/your/FunctionTest.php
 
 1. Clone the repository:
 ```bash
