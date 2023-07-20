@@ -26,11 +26,12 @@ To install PHPUnitExamples, follow these steps:
 Add Composer's global bin directory to the system PATH (if not done previously), you can find it by running:
 composer global config bin-dir --absolute
 
-macOS / Linux
-Open your terminal.
+### macOS / Linux 
+   Open your terminal.
 
-Install PHPUnit globally using Composer:
-composer global require phpunit/phpunit ^9
+   Install PHPUnit globally using Composer:
+
+   composer global require phpunit/phpunit ^9
 
 
 Open your .bashrc or .zshrc file (depending on which shell you use), you can do this via a text editor or by running nano ~/.bashrc or nano ~/.zshrc in your terminal.
@@ -46,14 +47,13 @@ Save and close the file.
 
 Run source ~/.bashrc or source ~/.zshrc to load the new shell configuration.
 
-Running the tests
+## Running the tests
 To run the PHPUnit tests, navigate to the project directory and run the following command:
+   phpunit /path/to/your/FunctionTest.php
 
-## phpunit
+
 If you have installed PHPUnit locally in your project (i.e., it's listed as a dev dependency in your composer.json), you should use the following command instead:
-
-## Copy code
-./vendor/bin/phpunit /path/to/your/FunctionTest.php
+   ./vendor/bin/phpunit /path/to/your/FunctionTest.php
 
 1. Clone the repository:
 ```bash
